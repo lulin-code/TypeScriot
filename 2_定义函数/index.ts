@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-04 16:18:14
- * @LastEditTime: 2021-08-04 17:01:01
+ * @LastEditTime: 2021-08-04 17:17:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /TypeScript/2_定义函数/index.ts
@@ -56,13 +56,13 @@ let fun2 = function ():number {
 // sum(1,2,3,4)
 
 // 8.函数重载
-function getInfo(name:string):string; 
-function getInfo(age:number):string; 
-function getInfo(str:any):any {
-  if (typeof str === 'string') {
-    return `我叫：${str}`
-  }else {
-    return `我的年龄是：${str}`
-  }
-}
-alert(getInfo(33))
+// function getInfo(name:string):string; 
+// function getInfo(age:number):string; 
+// function getInfo(str:any):any {
+//   if (typeof str === 'string') {
+//     return `我叫：${str}`
+//   }else {
+//     return `我的年龄是：${str}`
+//   }
+// }
+// alert(getInfo(33))
