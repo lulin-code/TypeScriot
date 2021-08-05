@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-04 16:18:14
- * @LastEditTime: 2021-08-04 17:17:20
+ * @LastEditTime: 2021-08-05 10:30:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /TypeScript/2_定义函数/index.ts
@@ -12,9 +12,9 @@
 // }
 
 // 2.匿名函数
-let fun2 = function ():number {
-  return 123
-}
+// let fun2 = function ():number {
+//   return 123
+// }
 
 // 3.定义方法传参
 // function getInfo(name:string,age:number) {

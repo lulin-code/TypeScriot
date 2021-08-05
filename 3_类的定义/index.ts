@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-04 17:34:05
- * @LastEditTime: 2021-08-05 10:19:09
+ * @LastEditTime: 2021-08-05 13:58:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /TypeScript/3_类的定义/index.ts
@@ -59,27 +59,27 @@
     protected：在类里面、子类里面可以访问、在类外部无法访问
     private：在类里面可以访问、子类、类外部没法访问
  */
-class Person {
-  name:string
-  protected age:number
-  private sex:string | undefined
-  constructor(name:string,age:number,sex:string) {
-    this.name = name
-    this.age = age
-    this.sex = sex
-  }
-  run():void{
-    console.log(`${this.name}--${this.age}---${this.sex}`)
-  }
-}
-let p = new Person('卢林',30,'男')
+// class Person {
+//   name:string
+//   protected age:number
+//   private sex:string | undefined
+//   constructor(name:string,age:number,sex:string) {
+//     this.name = name
+//     this.age = age
+//     this.sex = sex
+//   }
+//   run():void{
+//     console.log(`${this.name}--${this.age}---${this.sex}`)
+//   }
+// }
+// let p = new Person('卢林',30,'男')
 // console.log(p.sex) //protected 类外部无法访问
 // console.log(p.age) //private 类外部无法访问
 
-class Web extends Person{
-  constructor(name:string,age:number,sex:string) {
-     super (name,age,sex)  //private 子类无法访问
-  }
-}
-let w = new Web('卢林',30,'男')
-w.run()
+// class Web extends Person{
+//   constructor(name:string,age:number,sex:string) {
+//      super (name,age,sex)  //private 子类无法访问
+//   }
+// }
+// let w = new Web('卢林',30,'男')
+// w.run()
