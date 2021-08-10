@@ -2,7 +2,11 @@
  * @Author: 卢林
  * @Date: 2021-08-06 11:34:14
  * @LastEditors: 卢林
+<<<<<<< HEAD
  * @LastEditTime: 2021-08-09 20:45:21
+=======
+ * @LastEditTime: 2021-08-10 11:30:51
+>>>>>>> dev
  * @Descripttion: 文件描述
  */
 
@@ -100,35 +104,43 @@
 // w.eat()
 // w.work()
 
-interface Animal {
-  eat():void;
-}
-interface Person extends Animal{
-  work():void;
-}
+// interface Animal {
+//   eat():void;
+// }
+// interface Person extends Animal{
+//   work():void;
+// }
 
-class Programmer {
-  name:string;
-  constructor(name:string) {
-    this.name = name;
-  }
-  coding(code:string){
-   console.log(`${this.name}code`)
-  }
-}
+// class Programmer {
+//   name:string;
+//   constructor(name:string) {
+//     this.name = name;
+//   }
+//   coding(code:string){
+//    console.log(`${this.name}code`)
+//   }
+// }
 
-class Web extends Programmer implements Person {
-  constructor(name:string) {
-    super(name)
-  }
-  eat(){
-    console.log(`${this.name} 吃`) 
-  }
-  work(){
-    console.log(`${this.name} 工作`);
+// class Web extends Programmer implements Person {
+//   constructor(name:string) {
+//     super(name)
+//   }
+//   eat(){
+//     console.log(`${this.name} 吃`) 
+//   }
+//   work(){
+//     console.log(`${this.name} 工作`);
     
+<<<<<<< HEAD
   }
 }
  let w = new Web('李四')
 w.eat()
 w.work()
+=======
+//   }
+// }
+//  let w = new Web('李四')
+// w.eat()
+// w.work()
+>>>>>>> dev
