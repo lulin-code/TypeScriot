@@ -3,7 +3,7 @@
  * @Author: 卢林
  * @Date: 2021-08-10 09:44:28
  * @LastEditors: 卢林
- * @LastEditTime: 2021-08-11 09:40:13
+ * @LastEditTime: 2021-08-11 14:44:39
  * @Descripttion: 泛型
  */
 /**
@@ -94,38 +94,40 @@
 // Db.add(u);
 // 7.把类作为参数来约束数据传入的类型(泛型)
 // 7.1将userinfo 添加到数据库
-var MySqlDb = /** @class */ (function () {
-    function MySqlDb() {
-    }
-    MySqlDb.prototype.add = function (info) {
-        console.log(info);
-        return true;
-    };
-    return MySqlDb;
-}());
-var User = /** @class */ (function () {
-    function User() {
-    }
-    return User;
-}());
-var u = new User();
-u.username = '李白';
-u.password = '123455';
-var db = new MySqlDb();
-db.add(u);
+// class MySqlDb<T> {
+//   add(info:T):boolean{
+//     console.log(info);
+//     return true
+//   }
+// }
+// class User {
+//   username:string | undefined;
+//   password:string | undefined
+// }
+// let u = new User()
+// u.username = '李白'
+// u.password = '123455'
+// let db = new MySqlDb<User>()
+// db.add(u)
 // 7.2 文章类添加到暑假库
-var Article = /** @class */ (function () {
-    function Article(params) {
-        this.title = params.title;
-        this.desc = params.desc;
-        this.status = params.status;
-    }
-    return Article;
-}());
-var art = new Article({
-    title: '分类',
-    desc: '111',
-    status: 1
-});
-var Db = new MySqlDb();
-Db.add(art);
+// class Article {
+//   title:string | undefined;
+//   desc:string | undefined;
+//   status:number | undefined;
+//   constructor(params:{
+//     title:string | undefined;
+//     desc:string | undefined;
+//     status?:number | undefined;
+//   }) {
+//     this.title = params.title
+//     this.desc = params.desc
+//     this.status = params.status
+//   }
+// }
+// let art = new Article({
+//   title:'分类',
+//   desc:'111',
+//   status:1
+// })
+// let Db = new MySqlDb<Article>()
+// Db.add(art)
